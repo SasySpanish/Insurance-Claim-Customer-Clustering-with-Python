@@ -1,6 +1,6 @@
 # Insurance Customer Risk Analysis & Clustering Pipeline
 
-> **File**: `analysis_pipeline.py`  
+> **File**: `main.py`  
 > **Purpose**: Complete end-to-end analysis of synthetic insurance customer data:  
 > 1. **Monte Carlo simulation of claims**  
 > 2. **Exploratory Data Analysis (EDA)**  
@@ -127,4 +127,4 @@ The resulting clusters represent **four clear customer risk profiles**:
 ## How to Run
 
 ```bash
-python analysis_pipeline.py
+python main.py
