@@ -63,11 +63,11 @@ insurance-risk-segmentation/
 ## Visual Highlights
 
 | Plot | Insight |
-|------|--------|
-| **PCA 2D Clustering** | 4 clear, compact groups → interpretable risk segments |
-| **Claim Frequency** | Right-skewed: most have 0–1 claims |
-| **Expected Loss** | Long tail: few high-cost customers dominate risk |
-| **Frequency vs Severity** | Strong correlation; `Risk Profile` drives upper tail |
+|------|--------| 
+| ![Clustering PCA 2D](clustering_pca_2d.png) | Costumer clustering: 4 clear, compact groups → interpretable risk segments |
+| ![Frequency distribution](freq%20sinistri.png) | Frequency distribution: Right-skewed most have 0–1 claims |
+| ![Expected loss distribution](perdita%20attesa.png) |Loss distribution: Long tail - few high-cost customers dominate risk |
+| ![Frequency vs Severity](freq%20x%20sev%20scatter.png) | Frequency vs Severity: Strong correlation; `Risk Profile` drives upper tail |
 
 See all plots in [`results/`](results/)
 
