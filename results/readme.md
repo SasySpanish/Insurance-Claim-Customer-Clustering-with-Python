@@ -7,6 +7,31 @@
 > **Code**: `clustering_pipeline.py` (with `random_state=42`)
 
 ---
+## Exploratory Data Analysis (EDA)
+
+The following histograms and scatter plot were generated from the simulated claims data.  
+They provide the **raw risk distribution** before clustering and help validate the four customer profiles.
+
+| Plot | Description |
+|------|-------------|
+| ![Frequency distribution](frequency_histogram.png) | **Claim Frequency (`Sim_Frequency`)** – Poisson-like, heavily right-skewed. ~12 k customers have **0 claims**, ~11 k have **1 claim**, then a rapid drop. A tiny tail reaches **≥ 10 claims**. |
+| ![Expected loss distribution](expected_loss_histogram.png) | **Expected Loss (`Expected_Loss`)** – Highly skewed, with a sharp peak at **0 €** (most safe drivers) and a long tail up to ~2 000 €. |
+| ![Total severity distribution](severity_histogram.png) | **Total Severity (`Sim_Total_Loss`)** – Similar shape to Expected Loss (log-normal behavior). Most policies have **low total payout**; a few extreme cases exceed 2 000 €. |
+| ![Frequency vs Severity](freq_vs_sev_scatter.png) | **Frequency vs Total Severity**, coloured by **Risk Profile (0–3)** – Strong positive correlation (higher frequency → higher total loss). Higher `Risk Profile` values systematically sit on the upper-right part of the cloud, confirming the simulation logic. |
+
+### How the EDA connects to the clusters
+
+| Cluster | Frequency (mean) | Expected Loss (mean) | Interpretation from EDA |
+|---------|------------------|----------------------|--------------------------|
+| **0 – Gold Safe** | **0.83** | **19.71 €** | Dominates the **left-most bars** (0–1 claims) and the **near-zero loss** region. |
+| **1 – High Frequency Loser** | **5.91** | **425 €** | Located in the **far-right tail** of the frequency histogram and the **high-loss tail**. |
+| **2 – Balanced Premium** | **2.94** | **147 €** | Middle of the frequency distribution (2–4 claims) with moderate loss. |
+| **3 – Claim Heavy, Low Premium** | **2.55** | **47 €** | Surprisingly low loss despite a **high claim history** (3.71) – explains the **under-pricing** (only 1.9 k premium). |
+
+These plots **confirm the clustering**: the four groups naturally separate along the two risk dimensions (frequency & severity) that dominate the PCA projection.
+
+
+
 
 ## Key Findings
 
