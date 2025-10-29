@@ -30,8 +30,9 @@
 - **X-axis (PCA1)**: Premium, Income, Expected Loss  
 - **Y-axis (PCA2)**: Claim frequency, Claim History  
 - **Cluster 0 (blue)**: bottom-left → low risk, high value  
-- **Cluster 1 (red)**: top → high cost  
-- **Cluster 3 (green)**: center-left → high claims, low premium
+- **Cluster 1 (orange)**: top → high cost
+- **Cluster 2 (green)**: center → balanced risk
+- **Cluster 3 (red)**: center-left → high claims, low premium
 
 ---
 
