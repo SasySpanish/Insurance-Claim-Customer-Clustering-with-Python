@@ -14,7 +14,7 @@ They provide the **raw risk distribution** before clustering and help validate t
 
 | Plot | Description |
 |------|-------------|
-| ![Frequency distribution](freq20%sinistri.png) | **Claim Frequency (`Sim_Frequency`)** – Poisson-like, heavily right-skewed. ~12 k customers have **0 claims**, ~11 k have **1 claim**, then a rapid drop. A tiny tail reaches **≥ 10 claims**. |
+| ![Frequency distribution](freq%20sinistri.png) | **Claim Frequency (`Sim_Frequency`)** – Poisson-like, heavily right-skewed. ~12 k customers have **0 claims**, ~11 k have **1 claim**, then a rapid drop. A tiny tail reaches **≥ 10 claims**. |
 | ![Expected loss distribution](perdita20%attesa.png) | **Expected Loss (`Expected_Loss`)** – Highly skewed, with a sharp peak at **0 €** (most safe drivers) and a long tail up to ~2 000 €. |
 | ![Total severity distribution](severity_histogram.png) | **Total Severity (`Sim_Total_Loss`)** – Similar shape to Expected Loss (log-normal behavior). Most policies have **low total payout**; a few extreme cases exceed 2 000 €. |
 | ![Frequency vs Severity](freq_vs_sev_scatter.png) | **Frequency vs Total Severity**, coloured by **Risk Profile (0–3)** – Strong positive correlation (higher frequency → higher total loss). Higher `Risk Profile` values systematically sit on the upper-right part of the cloud, confirming the simulation logic. |
