@@ -15,7 +15,7 @@ This project demonstrates a **full data science pipeline** for insurance risk an
 2. **Monte Carlo claim simulation + clustering** → `src/`
 3. **Visualizations + actionable insights** → `results/`
 
-The result: **4 customer risk segments** that reveal **underpriced policies**, **high-risk losers**, and **profit drivers**.
+Results: **[4 customer risk segments** that reveal **underpriced policies**, **high-risk losers**, and **profit drivers](results)**.
 
 ---
 
