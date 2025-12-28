@@ -73,6 +73,16 @@ See all plots in [`results/`](results/)
 
 ---
 
+## Business Impact
+
+| Action | Estimated Benefit |
+|-------|-------------------|
+| Reprice **Cluster 3** (+1.3k/customer) | **+65 M€** (50k customers) |
+| Exclude or penalize **Cluster 1** | Reduce loss exposure |
+| Upsell **Cluster 0 & 2** | Increase retention & revenue |
+
+---
+
 ## How to Run
 
 ```bash
@@ -91,16 +101,6 @@ python src/analysis_pipeline.py
 
 ---
 
-## Business Impact
-
-| Action | Estimated Benefit |
-|-------|-------------------|
-| Reprice **Cluster 3** (+1.3k/customer) | **+65 M€** (50k customers) |
-| Exclude or penalize **Cluster 1** | Reduce loss exposure |
-| Upsell **Cluster 0 & 2** | Increase retention & revenue |
-
----
-
 ## Reproducibility
 
 - **Deterministic**: `random_state=42` in PCA, KMeans, and simulation
@@ -110,6 +110,6 @@ python src/analysis_pipeline.py
 ---
 
 ## Author
+Developed by **[Salvatore Spagnuolo](https://github.com/SasySpanish)**  
 
-**[Salvatore Spagnuolo]**  
-
+---
